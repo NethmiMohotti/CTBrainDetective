@@ -1,0 +1,131 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  overflow-x: hidden ;
+  background: #FFFFFF;
+}
+
+
+nav{
+    font-family: 'Poppins', sans-serif;
+    height: 100px;
+background: linear-gradient(to bottom right, rgb(78, 77, 77), rgb(155, 169, 183));
+
+align-items: center;
+justify-content: space-between;
+padding: 0 20px 0 40px;
+display: flex;
+flex-wrap: wrap;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #0d0b0b;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 8px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+
+nav ul li a:hover{
+  color: #00255c;
+  background: #fff;
+}
+
+h1{
+  padding: 8px 8px;
+  padding-left: 50px;
+  color: #000;
+  font-family: Georgia;
+  font-style: italic;
+}
+
+h3{
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  color: #000;
+  font-family: Georgia;
+  font-style: italic;
+}
+
+#upload-container {
+  height: 300px;
+  width: 50%;
+  padding-top: 50px;
+  margin: 10px auto;
+  /* text-align: center; */
+  border: 2px solid #5b5757;
+}
+
+#direcetion{
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+#upload-message{
+  /* padding-left: 100px; */
+  text-align: center;
+}
+
+#upload-file {
+  font-size: 20px;
+  margin-left: 150px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  border: 2px solid #415b77;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #020249;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#upload-file:hover {
+  background-color: #6fa3db;
+  color: #fff;
+}
+
+#upload-button{
+  background-color: #1c1b76; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 300px;
+  cursor: pointer;
+  padding: 14px 40px;
+}
+
+#upload-button:hover{
+  background-color: #6fa3db;
+  color: #fff;
+}
+
+footer{
+  background: linear-gradient(to bottom right, rgb(78, 77, 77), rgb(155, 169, 183));
+    padding: 10px;
+    height: 50px;
+    text-align: center;
+    color: white;
+}

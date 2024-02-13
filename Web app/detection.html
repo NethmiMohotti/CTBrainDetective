@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="heading">
+            <h1>CTBrainDetective</h1>
+        </div>
+        <ul>
+            <li><a class="nav_link" href="index.html">CT Details</a></li>
+            <li><a class="nav_link" href="detection.html">Defect Detection</a></li>
+        </ul>
+    </nav>
+        
+  </header>
+
+    <div class="information">
+        <h3>Defect Detection from CT images</h3>
+    </div>
+
+    <div id="upload-container">
+        <label id="direcetion">Choose file to upload:</label><br><br>
+        <input type="file" id="upload-file" accept="image/png, image/jpeg" /><br><br>
+      <p id="upload-message">Please Upload CT images in JPEG images only</p>
+
+      <button id="upload-button" disabled>Detect the defects</button>
+    </div>
+    <br><br><br><br><br>
+  <br>
+  
+    <script>
+      // JavaScript code for handling file upload
+      const uploadFile = document.getElementById("upload-file");
+      const uploadMessage = document.getElementById("upload-message");
+  
+      uploadFile.addEventListener("change", function() {
+        if (uploadFile.value) {
+          uploadMessage.textContent = "Please wait while we process your image...";
+          // You can add your image processing logic here
+        } else {
+          uploadMessage.textContent = "";
+        }
+      });
+    </script>
+
+<footer>
+  <div class="fotter-class">
+      <p>footer</p>
+  </div>
+</footer>
+  </body>
+
+ 
+</html>

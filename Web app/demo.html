@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CT Brain Detective</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    
+    #upload-container {
+      width: 80%;
+      margin: 50px auto;
+      text-align: center;
+    }
+
+    #upload-file {
+      font-size: 20px;
+      padding: 10px 20px;
+      border: 2px solid #007bff;
+      border-radius: 5px;
+      background-color: #fff;
+      color: #007bff;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #upload-file:hover {
+      background-color: #007bff;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div id="upload-container">
+    <h1>CT Brain Detective</h1>
+    <p>Defect Detection from CT images</p>
+    <p>
+      <input type="file" id="upload-file" accept=".dcm" />
+    </p>
+    <p id="upload-message"></p>
+  </div>
+
+  <script>
+    // JavaScript code for handling file upload
+    const uploadFile = document.getElementById("upload-file");
+    const uploadMessage = document.getElementById("upload-message");
+
+    uploadFile.addEventListener("change", function() {
+      if (uploadFile.value) {
+        uploadMessage.textContent = "Please wait while we process your image...";
+        // You can add your image processing logic here
+      } else {
+        uploadMessage.textContent = "";
+      }
+    });
+  </script>
+</body>
+</html>
