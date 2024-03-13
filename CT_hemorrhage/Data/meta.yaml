@@ -1,0 +1,11 @@
+path: 'C:\Users\Nethmi Mohotti\Desktop\FYP\Development\CTBrainDetective\Data'
+tarin: 'images\train'
+val: "images/valid"
+test: "images/test"
+
+nc: 4
+names:
+0: Intraparenchymal
+1: Intraventricula
+2: Subarachnoid
+3: Subdural
