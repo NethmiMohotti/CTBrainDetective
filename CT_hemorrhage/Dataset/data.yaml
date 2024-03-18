@@ -1,0 +1,5 @@
+train: "C:/Users/Nethmi Mohotti/Desktop/FYP/Development/CTBrainDetective/Dataset/train"
+val: "C:/Users/Nethmi Mohotti/Desktop/FYP/Development/CTBrainDetective/Dataset/train"
+
+nc: 4
+names: ["Intraparenchymal", "Intraventricular", "Subarachnoid", "Subdural"]
